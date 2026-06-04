@@ -8,7 +8,8 @@
 namespace te {
 
 	struct Directory : Entry {
-		std::vector<Entry*> entries; //Вектор указателей на дочерние элементы
+		//Вектор указателей на дочерние элементы
+		std::vector<Entry*> entries; 
 
 		Directory(const std::string& name);
 		~Directory() override;
