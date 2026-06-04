@@ -1,7 +1,8 @@
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -Wpedantic
 TARGET = terminal
-SOURCES = main.cpp terminal.cpp directory.cpp zygote_file.cpp single_line_file.cpp multi_line_file.cpp
+SOURCES = main.cpp terminal.cpp directory.cpp zygote_file.cpp 
+single_line_file.cpp multi_line_file.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 
 all: $(TARGET)
