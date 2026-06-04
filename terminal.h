@@ -12,12 +12,15 @@ struct Terminal {
 
 	Directory* root; //Корневая директория
 
-	std::vector<Directory*> path; //Список директорий текущего пути к рабочему каталогу
+	//Список директорий текущего пути к рабочему каталогу
+	std::vector<Directory*> path; 
 
 	Terminal(Directory* root); 
 
-	Directory* cwd() const; //Возвращаем текущую рабочую директорию
-	std::string prompt() const; //Функция генерации промпта (приглашение командной строки)
+	//Возвращаем текущую рабочую директорию
+	Directory* cwd() const; 
+	//Функция генерации промпта (приглашение командной строки)
+	std::string prompt() const; 
 	void run(); //Цикл обработки команд
 
 };
