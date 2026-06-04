@@ -7,7 +7,8 @@ namespace te {
 
 //Конструктор
 Directory::Directory(const std::string& name) : Entry(name){
-	std::cout << "Directory '" << name << "' successfully created.\n";
+	std::cout << "Directory '" << name << "' successfully 
+		created.\n";
 }
 
 //Деструктор
@@ -42,7 +43,7 @@ void Directory::restore() {
 	}
 }
 
-//Отображение имени директории (добавили / в конце, чтобы различать)
+//Отображение имени директории (добавили / в конце)
 std::string Directory::displayName() const {
 	return entry_name + "/";
 }
